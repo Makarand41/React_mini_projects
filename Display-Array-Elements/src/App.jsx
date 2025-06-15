@@ -7,8 +7,8 @@ function App() {
       <h2>FAQs</h2>
 
 
-      {data.map((item) => (
-        <div key={item.id} >
+      {data.map((item, index) => (
+        <div key={index}>
           <p>Q: {item.q}</p>
           <p>A: {item.ans}</p>
         </div>
